@@ -4,7 +4,7 @@ This is an example of how to generate infinite dependent lists in CakePHP 3.x.
 Most of the of work will be performed on the server side. This is may be convenient if the classifier tables will be a large number of rows.
 For example, I will use an online store.
 
-## First let's create our tables in the database:
+### First let's create our tables in the database:
 
 `products` - catalog;
 `classifiers` -  list of all classifiers;
@@ -303,7 +303,7 @@ class ProductsController extends AppController
 
 ```
 
-## Simple Jquery function for AJAX requests:
+### JS to send to the server:
 
 ```js
 function dependentsLists(_this) {
@@ -331,5 +331,3 @@ function dependentsLists(_this) {
 }
 
 ```
-
-# CakePHP 3.x dependents lists in selectors ([DEMO](https://kotlyarov.us/cakephp-dependents-lists/products/edit/1))
