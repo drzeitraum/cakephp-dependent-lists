@@ -19,8 +19,8 @@ bin/cake bake model Classifiers;
 
 ```
 
-### Next, need an array that will store the dependencies of all classifiers.
-Creating the `DependentsComponent.php` component in `/src/Controller/Component/`:
+### Creating the `DependentsComponent.php` component in `/src/Controller/Component/`:
+Next, need an array that will store the dependencies of all classifiers.
 
 ```php
 <?php
@@ -170,7 +170,7 @@ class DependentsController extends AppController
 
 ### The view `index.ctp` in `/src/Template/Dependents/`:
 
-```html
+```php
 <? if (isset($classifiers)) { ?>
     <? foreach ($classifiers as $key => $value) { ?>
         <?= $this->Form->control($labels[$key]['entity'] . '_id', [
@@ -273,7 +273,7 @@ class ProductsController extends AppController
 
 ### And view of controller `edit.ctp` in `/src/Template/Products/`:
 
-```html
+```php
 <?= $this->Form->create($product]) ?>
 <?= $this->Form->control('name', ['label' => 'Name']) ?>
 <?= $this->Form->control('classifier_product_id', [
