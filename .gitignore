@@ -1,16 +1,22 @@
-/*
+*
+!*/
+/vendor/
 
 !/config/routes.php
-!/config/tpl-form.php
-!/src/Controller/AutocompleteController.php
-!/src/Controller/UsersController.php
+
+!/src/Controller/DependentsController.php
+!/src/Controller/ProductsController.php
+!/src/Controller/Component/DependentsComponent.php
+
+!/src/Model/Entity/Classifier.php
+!/src/Model/Entity/Product.php
+!/src/Model/Table/ClassifiersTable.php
+!/src/Model/Table/ProductsTable.php
+
+!/src/Template/Dependents/index.ctp
 !/src/Template/Layout/default.ctp
-!/src/Template/Autocomplete/index.ctp
-!/src/Template/Users/edit.ctp
-!/src/View/Helper/BaseHelper.php
-!/src/View/Widget/CustomACWidget.php
-!/src/View/AppView.php
-!/webroot/css/style.css
+!/src/Template/Products/edit.ctp
+
 !/webroot/js/scripts.js
 
 !db.sql
